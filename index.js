@@ -47,25 +47,6 @@ app.listen(3000, function () {
     console.log("Server is running on localhost:3000");
 });
  
-var multer  =   require('multer');  
-var storage =   multer.diskStorage({  
-  destination: function (req, file, callback) {  
-    callback(null, '/uploads/');  
-  },  
-  filename: function (req, file, callback) {  
-    callback(null, file.originalname);  
-  }  
-});  
-var upload = multer({ storage : storage}).single('myfile');  
 
-app.post('/file_upload',function(req,res){  
-    upload(req,res,function(err) {  
-        if(err) {  
-            return res.end("Error uploading file.");  
-        }  
-        console.log("File is uploaded successfully!");  
-        res.redirect('/home.html');
-    });  
-});  
 
 
