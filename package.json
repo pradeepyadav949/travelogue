@@ -12,7 +12,7 @@
   },
   "name": "travel",
   "version": "1.0.0",
-  "main": "pr_script.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "description": ""
