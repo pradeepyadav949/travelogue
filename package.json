@@ -8,7 +8,7 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "name": "travel",
   "version": "1.0.0",
