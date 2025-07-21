@@ -2,85 +2,109 @@
 <html>
 
 <head>
-	<title>Login to Travelogue</title>
-	<link rel="stylesheet" href="w3.css">
-	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-	<div class="w3-container w3-cell-middle">
-		<div style="float:left;">
-			<img src="images/logo.png" alt="Travelogue" />
-		</div>
-		<div style="float:right; align:center; height:88px" class="w3-cell-middle w3-padding-top-32">
-			<a class="w3-cell-middle w3-round" href="login.html" target="_top"
-				style="padding:15px; border:1px solid; background-color:maroon; opacity:0.7; color:white; text-decoration:none; align:right"><b>Login
-					/ SignUp</b></a>
-			 
-		</div>
-	</div>
-	<style>
-		body {
-			background: linear-gradient(rgba(255, 255, 255, .50), rgba(255, 255, 255, .50)), url(images/travel-background.jpg);
-			background-size: 100%;
-			background-attachment: scroll;
-			color: #24181c;
-			font-family: 'Open Sans';
-			font-size: 16px;
-			font-weight: bold;
-		}
+    <title>Login Success | Travelogue</title>
+    <link rel="stylesheet" href="w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(rgba(255, 255, 255, .50), rgba(255, 255, 255, .50)), url(images/travel-background.jpg);
+            background-size: cover;
+            background-attachment: scroll;
+            color: #24181c;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
 
-		.vertical {
-			border-left: 2px solid rgb(0, 0, 0);
-			height: 300px;
-			position: absolute;
-			left: 46%;
-		}
+        .main-content {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-		table, th, td {
-			border: 0.5px solid rgb(169, 166, 166);
-			border-collapse: collapse;
-		}
-	</style>
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 60px 0 60px;
+            min-width: 900px;
+        }
+
+        .header-bar img {
+            height: 88px;
+        }
+
+        .login-btn {
+            padding: 15px;
+            border: 1px solid;
+            background-color: maroon;
+            opacity: 0.7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.5px solid rgb(169, 166, 166);
+            border-collapse: collapse;
+        }
+
+        .footer {
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 
 <body>
-	<h1 align="center" style="text-shadow:1px 1px maroon;"><br><br><br><i>Welcome to Travelogue India Pvt. Ltd.</i></h1>
-	<br>
-	<!--h1 align="center"  style="text-shadow:1px 1px maroon;">Login Page</h1-->
-	
-    <table align="center" cellpadding="10px" cellspacing="2px"
-        style="background-color:beige; border-style:solid; border-radius: 5px">
-        <tr>
-            <th align="center" colspan="2" rowspan="5">
-                <h2>Yay! You are successfully logged in !</h2>
-            </th>
-    </table>
-	
-
-	<br><br><br><br><br>
-	<div align="center">
-		<a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="2%"
-				height="2%" /></a>&nbsp;
-		<a href="https://www.youtube.com"><img src="images/youtube.png" alt="YouTube" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.telegram.org"><img src="images/telegram.png" alt="Telegram" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp" width="2%" height="2%" /></a>&nbsp;
-	</div>
-	<div style="background-color:lightgrey;">
-		<p align="center">
-			<a href="home.html">Home</a>
-			&emsp; ◆ &emsp;
-			<a href="aboutus.html">About Us</a>
-			&emsp; ◆ &emsp;
-			<a href="openings.html">Current Openings</a>
-			&emsp; ◆ &emsp;
-			<a href="contactus.html">Contact Us</a>
-		</p>
-	</div>
-	<div align="center" style="vertical-align:bottom; background-color:black; color:white;">
-		Author: Pradeep Yadav<br>
-		For any query, feel free to mail at: <a href="mailto:info@travelogue.com" style="color:white">info@travelogue.com</a>
-		© 2022 TRAVELOGUE INDIA PVT. LTD. All rights reserved.
-	</div>
+    <div class="header-bar w3-container">
+        <img src="images/logo.png" alt="Travelogue" />
+        <a class="login-btn w3-round" href="login.html" target="_top"><b>Login / SignUp</b></a>
+    </div>
+    <div class="main-content">
+        <h1 align="center" style="text-shadow:1px 1px maroon;"><br><i>Welcome to Travelogue India Pvt. Ltd.</i></h1>
+        <br>
+        <table align="center" cellpadding="10px" cellspacing="2px"
+            style="background-color:beige; border-style:solid; border-radius: 5px">
+            <tr>
+                <th align="center" colspan="2" rowspan="5">
+                    <h2>Yay! You are successfully logged in!</h2>
+                </th>
+            </tr>
+        </table>
+        <br><br>
+        <div align="center" style="margin-bottom:0;">
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter" width="2%" height="2%" /></a>&nbsp;
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" width="2%" height="2%" /></a>&nbsp;
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="2%" height="2%" /></a>&nbsp;
+            <a href="https://www.youtube.com"><img src="images/youtube.png" alt="YouTube" width="2%" height="2%" /></a>&nbsp;
+            <a href="https://www.telegram.org"><img src="images/telegram.png" alt="Telegram" width="2%" height="2%" /></a>&nbsp;
+            <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp" width="2%" height="2%" /></a>&nbsp;
+        </div>
+        <div style="background-color:lightgrey; margin-bottom:0;">
+            <p align="center" style="margin:0;">
+                <a href="index.html">Home</a>
+                &emsp; ◆ &emsp;
+                <a href="aboutus.html">About Us</a>
+                &emsp; ◆ &emsp;
+                <a href="openings.html">Current Openings</a>
+                &emsp; ◆ &emsp;
+                <a href="contactus.html">Contact Us</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer" align="center" style="vertical-align:bottom; background-color:black; color:white;">
+        Author: Pradeep Yadav<br>
+        For any query, feel free to mail at: <a href="mailto:info@travelogue.com" style="color:white">info@travelogue.com</a>
+        © 2022 TRAVELOGUE INDIA PVT. LTD. All rights reserved.
+    </div>
 </body>
 
 </html>

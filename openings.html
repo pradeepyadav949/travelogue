@@ -2,100 +2,156 @@
 <html>
 
 <head>
-	<title>Welcome to Travelogue website - Here you can book your holiday trips within India</title>
-	<link rel="stylesheet" href="w3.css">
-	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-	<div class="w3-container w3-cell-middle">
-		<div style="float:left;">
-			<img src="images/logo.png" alt="Travelogue" />
-		</div>
-		<div style="float:right; align:center; height:88px" class="w3-cell-middle w3-padding-top-32">
-			<a class="w3-cell-middle w3-round" href="login.html" target="_top"
-				style="padding:15px; border:1px solid; background-color:maroon; opacity:0.7; color:white; text-decoration:none; align:right"><b>Login
-					/ SignUp</b></a>
-			 
-		</div>
-	</div>
-	<style>
-		body {
-			background: linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.50)), url(images/travel-background.jpg);
-			background-size: 100%;
-			background-attachment: scroll;
-			color:#24181c;
-			font-family: 'Open Sans';font-size: 16px;
-			font-weight: bold;
-		}
-		.vertical {
-			border-left: 2px solid rgb(0, 0, 0);
-			height: 300px;
-			position:absolute;
-			left: 46%;
-		}
-		a{
-			text-decoration: none;
-			color:black;
-			font-weight: bold;
-		}
-	</style>
-	<script src="script.js"></script>
+    <title>Welcome to Travelogue website - Here you can book your holiday trips within India</title>
+    <link rel="stylesheet" href="w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <style>
+        body {
+            background: linear-gradient(rgba(255,255,255,.50), rgba(255,255,255,.50)), url(images/travel-background.jpg);
+            background-size: cover;
+            background-attachment: scroll;
+            color:#24181c;
+            font-family: 'Open Sans';font-size: 16px;
+            font-weight: bold;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding-left: 0;
+            min-height: 66vh;
+        }
+        .contact-box {
+            width: 400px;
+            box-sizing: border-box;
+        }
+        .vertical {
+            width: 2px;
+            background: rgb(0, 0, 0);
+            height: 320px;
+            margin: 0 20px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 60px 0 60px;
+            min-width: 900px;
+        }
+        .header-bar img {
+            height: 88px;
+        }
+        .login-btn {
+            padding: 15px;
+            border: 1px solid;
+            background-color: maroon;
+            opacity: 0.7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="script.js"></script>
 </head>
 
-<body><br><br><br><br><br><br>
-	<div class="flex-container w3-container" style="display:flex; float:none;padding-left:240px; min-height:66vh">
-		<div class="w3-container w3-border" style=" padding-right:20px;width: 400px;">
-			<h1 style="float:left">Job Openings</h1><br><br><br><br><br><br>
-			<p>Our team is happy to answer your recruitment queries. <br>
-				Fill out the form and we'll be in touch as soon as possible.<br><br>
-				For recruitment enquiry, dial: +91-9999000000</p>
-		</div>
-		<div class = "vertical"><br><br><br></div>
-		<div class="w3-container w3-border">
-			<h1 class="w3-container" style="padding-left:40px; float:w3-left">Drop us a line, <br>Get in Touch!</h1>
-			<br><br>
-			<form class="w3-center" action="/file_upload" method="POST" enctype = "multipart/form-data">
-				<input onfocus="this.value=''" type="text" size="45"
-					style="line-height:1cm; border-radius: 5px; border: 2px solid #968F9F" value="Your Name"><br><br>
-				<input onfocus="this.value=''" type="email" size="45"
-					style="line-height:1cm; border-radius: 5px; border: 2px solid #968F9F"
-					value="Your e-mail address"><br><br>
-				<input onfocus="this.value=''" type="tel" size="45"
-					style="line-height:1cm; border-radius: 5px; border: 2px solid #968F9F"
-					value="Your telephone number"><br><br>
-				<textarea onfocus="if(this.value== 'Your query'){this.value=''}; return false;" rows="5" cols="42"
-					style="border-radius: 5px; border: 2px solid #968F9F">Your brief Intro</textarea><br><br>
-				<label>Attach your resume(.pdf): </label><br><br>
-				<input type="file" value="attach your resume" accept=".pdf" class="w3-right-align"><br><br>
-				<input type="submit" value="Submit" class="w3-right-align"><br><br>
-			</form>
-			<form>
-			</form>
-		</div>
-	</div>
-	<div align="center">
-		<a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="2%"
-				height="2%" /></a>&nbsp;
-		<a href="https://www.youtube.com"><img src="images/youtube.png" alt="YouTube" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.telegram.org"><img src="images/telegram.png" alt="Telegram" width="2%" height="2%" /></a>&nbsp;
-		<a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp" width="2%" height="2%" /></a>&nbsp;
-	</div>
-	<div style="background-color:lightgrey;">
-		<p align="center">
-			<a href="home.html">Home</a>
-			&emsp; ◆ &emsp;
-			<a href="aboutus.html">About Us</a>
-			&emsp; ◆ &emsp;
-			<a href="openings.html">Current Openings</a>
-			&emsp; ◆ &emsp;
-			<a href="contactus.html">Contact Us</a>
-		</p>
-	</div>
-	<div align="center" style="vertical-align:bottom; background-color:black; color:white;">
-		Author: Pradeep Yadav<br>
-		For any query, feel free to mail at: <a href="mailto:info@travelogue.com" style="color:white">info@travelogue.com</a>
-		© 2022 TRAVELOGUE INDIA PVT. LTD. All rights reserved.
-	</div>
+<body>
+    <div class="header-bar w3-container">
+        <img src="images/logo.png" alt="Travelogue" />
+        <a class="login-btn w3-round" href="login.html" target="_top"><b>Login / SignUp</b></a>
+    </div>
+    <br><br>
+    <div class="flex-container w3-container">
+        <div class="w3-container w3-border contact-box" style="padding-right:20px;">
+            <h1 style="float:left">Job Openings</h1><br><br><br><br><br><br>
+            <p>Our team is happy to answer your recruitment queries. <br>
+                Fill out the form and we'll be in touch as soon as possible.<br><br>
+                For recruitment enquiry, dial: +91-9999000000</p>
+        </div>
+        <div class="vertical"></div>
+        <div class="w3-container w3-border contact-box">
+            <h1 class="w3-container" style="padding-left:40px;">Drop us a line, <br>Get in Touch!</h1>
+            <br>
+            <form class="w3-center" id="openingsForm" action="#" method="POST" enctype="multipart/form-data" onsubmit="return validateOpeningsForm();">
+                <input type="text" id="name" size="45"
+                    style="line-height:1cm; border-radius: 5px; border: 2px solid #968F9F; width: 350px;" placeholder="Your Name"><br><br>
+                <input type="email" id="email" size="45"
+                    style="line-height:1cm; border-radius: 5px; border: 2px solid #968F9F; width: 350px;"
+                    placeholder="Your e-mail address"><br><br>
+                <input type="tel" id="phone" size="45"
+                    style="line-height:1cm; border-radius: 5px; border: 2px solid #968F9F; width: 350px;"
+                    placeholder="Your telephone number"><br><br>
+                <textarea id="intro" rows="5" cols="42"
+                    style="border-radius: 5px; border: 2px solid #968F9F; width: 350px;" placeholder="Your brief Intro"></textarea><br><br>
+                <label>Attach your resume (.pdf): </label><br><br>
+                <input type="file" id="resume" accept=".pdf"><br><br>
+                <input type="submit" value="Submit"><br><br>
+            </form>
+            <script>
+function validateOpeningsForm() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var intro = document.getElementById('intro').value.trim();
+    var resume = document.getElementById('resume').value;
+    if (!name) {
+        alert("Please enter your name.");
+        return false;
+    }
+    if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+    if (!phone) {
+        alert("Please enter your telephone number.");
+        return false;
+    }
+    if (!intro) {
+        alert("Please enter your brief intro.");
+        return false;
+    }
+    if (!resume) {
+        alert("Please attach your resume (.pdf).");
+        return false;
+    }
+    alert("Thank you for applying! (Demo only, no data will be sent.)");
+    // Reset the form fields after successful submission
+    document.getElementById('openingsForm').reset();
+    return false; // Prevent actual submission and URL change
+}
+            </script>
+        </div>
+    </div>
+    <div align="center">
+        <a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter" width="2%" height="2%" /></a>&nbsp;
+        <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" width="2%" height="2%" /></a>&nbsp;
+        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="2%" height="2%" /></a>&nbsp;
+        <a href="https://www.youtube.com"><img src="images/youtube.png" alt="YouTube" width="2%" height="2%" /></a>&nbsp;
+        <a href="https://www.telegram.org"><img src="images/telegram.png" alt="Telegram" width="2%" height="2%" /></a>&nbsp;
+        <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp" width="2%" height="2%" /></a>&nbsp;
+    </div>
+    <div style="background-color:lightgrey;">
+        <p align="center">
+            <a href="index.html">Home</a>
+            &emsp; ◆ &emsp;
+            <a href="aboutus.html">About Us</a>
+            &emsp; ◆ &emsp;
+            <a href="openings.html">Current Openings</a>
+            &emsp; ◆ &emsp;
+            <a href="contactus.html">Contact Us</a>
+        </p>
+    </div>
+    <div align="center" style="vertical-align:bottom; background-color:black; color:white;">
+        Author: Pradeep Yadav<br>
+        For any query, feel free to mail at: <a href="mailto:info@travelogue.com" style="color:white">info@travelogue.com</a>
+        © 2022 TRAVELOGUE INDIA PVT. LTD. All rights reserved.
+    </div>
 </body>
 
 </html>
